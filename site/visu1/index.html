@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>Controverse IC05</title>
+  <meta charset="utf-8" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- Trouver pourquoi ça bug sur la navigation-->
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-2 toc">
+        <ul class="nav">
+          <li>
+            <a href="../acceuil/index.html">Page principale du site</a>
+          </li>
+          <li>
+            <a href="../intro/index.html">Introduction à la controverse</a>
+          </li>
+          <li>
+            <a href="#" class="active">Visualisation : Analyse textuelle des commentaires de vidéos YouTube</a>
+          </li>
+          <li>
+            <a href="../visu2/index.html">Visualisation : Analyse des <i>tweets</i> dédiés aux néonicotinoïdes
+            </a>
+          </li>
+          <li>
+            <a href="../visu3/index.html">Visualisation : Analyse des résultats du vote de l'Assemblée nationale sur le retour des néonicotinoïdes</a>
+          </li>
+          <li>
+            <a href="../synthese/index.html" >Synthèse</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 content">
+        <h1>Projet IC05</h1>
+        <h2>Visualisation : Analyse textuelle des commentaires de vidéos</h2>
+        <br>
+        <h3>Présentation du Protocole</h3>
+
+        <p>L'objectif de cette première visualisation est de croiser différents nuages de mots issus des commentaires de différentes vidéos YouTube afin de récupérer le champ sémantique de la controverse.</p>
+        <p>Les nuages obtenus sont issus des vidéos suivantes :
+          <ol>
+            <li><a href="https://youtu.be/ZLewH3zRSFU">"Néonicotinoïdes : l'empoisonnement volontaire"</a>, <i>Jean-Luc Mélenchon</i>, allocution à l'Assemblée nationale. </li>
+            <li><a href="https://youtu.be/wmBicGRNrq4">"Néonicotinoïdes: On a visité une exploitation de betteraves touchée par la jaunisse"</a>, <i>LeHuffPost</i>, reportage court.</li>
+            <li><a href="https://youtu.be/h6bzmaHBqVg">"Qui Veut Tuer les Abeilles ? Enquête sur le Lobby du SUCRE français"</a>, <i>Partager C'est Sympa, vidéaste engagé.</i></li>
+          </ol>
+          Les vidéos 1 et 3 peuvent être considérées comme anti-néonicotinoïdes là où la vidéo 2 peut être vue comme en leur faveur, mettant en avant les conséquences économiques de son retrait pour un agriculteur.
+          Si la différence d'engagement rend difficile la comparaison de ces vidéos, cela n'a cependant pas d'influence importante dans l'orientation des commentaires.
+        </p>
+
+        <h3>Visualisation et analyse des résulats</h3>
+
+        <div class="row">
+          <div class="column3">
+            <div class="">
+              <img src="melenchonwc.png" alt="Representation des données" width="100%">
+            </div>
+
+            <center>
+              <p>Nuage de mots des commentaires de la vidéo 1 avec traitement</p>
+            </center>
+          </div>
+          <div class="column3">
+            <div class="">
+              <img src="worldcloudHP.png" alt="Nuage de Mots HuffPost" width="115%">
+            </div>
+            <center>
+              <p>Nuage de mots des commentaires de la vidéo 2</p>
+            </center>
+          </div>
+          <div class="column3">
+            <div class="">
+              <img src="partageWC.png" alt="Nuage de Mots Sympa" width="95%">
+            </div>
+
+            <center>
+              <p>Nuage de mots des commentaires de la vidéo 3</p>
+            </center>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column2">
+            <div class="">
+              <img src="linkWordHP.png" alt="Mots Liés HuffPost"  width="100%">
+            </div>
+
+            <center>
+              <p>Association des mots de la vidéo 2</p>
+            </center>
+          </div>
+          <div class="column2">
+            <div class="">
+              <img src="wordlinkSympa.png" alt="Mots Liés Sympa" width="100%">
+            </div>
+            <center>
+              <p>Association des mots de la vidéo 3</p>
+            </center>
+          </div>
+        </div>
+        <br>
+        <h4>Vidéo 1</h4>
+        <p>Le nuage de mots de la vidéo 1 met en évidence une orientation des discussions autour de la figure de Jean-Luc Mélenchon. Les commentaires sont globalement en accord avec ses dires et s'orientent surtout vers une démarche de politique par l'action, caractéristique de la mouvance Insoumise. On observe une forte tendance au soutien et à l'encouragement symbolisée par l'"emoji_pouce", principal mot du nuage, mais aussi à la mobilisation avec des mots-clés comme "pouvoir", "peuple", "ministre", "députés", "vote", "république"...
+        Si des termes rattachés à la controverse apparaissent, comme "pesticides", "loi", "écologie", "santé" ou encore "abeilles" et "betterave", ces derniers ne sont pas les mots les plus utilisés de l'espace commentaire.</p>
+
+        <h4>Vidéo 2</h4>
+        <p>Le nuage de mots de la vidéo 2 est un peu plus orienté vers les conséquences concrètes liées au retour des néonicotinoïdes. On y retrouve en majorité des termes liés à l'agriculture, comme "betterave", "agriculteur" ou encore "culture", mais aussi des termes plus orientés vers le débat, comme "pesticides", "écologie", "insectes" ou "monocultures".
+        Contrairement à la première vidéo, une analyse approfondie de notre base de données témoigne de l'existence d'échanges plus élaborés. On a en moyenne 8 réponses par commentaire. Cela est lié à un échange entre 2 personnes, dont Lucas qui apparait dans le nuage de mots, cumulant à 33 réponses consécutives.</p>
+
+
+        <h4>Vidéo 3</h4>
+        <p>
+          Le nuage de mots de la dernière vidéo offre un paysage de commentaires similaire. Les mots les plus importants sont "sucre" et "abeille". Si le nuage précédent parlait de "solution", ici nous retrouvons plutôt des termes comme "problème" et "action". Il est intéressant de noter également que le terme "néonicotinoïdes" apparait cette fois-ci clairement.
+        </p>
+
+        <h4>Associations de mots</h4>
+        <p>Pour aller un peu plus loin, les associations de mots réalisées pour les vidéos 2 et 3 – la première vidéo étant trop tournée vers le personnage de Jean-Luc Mélenchon –, mettent en avant des relations similaires entre les mots.
+        Sucre et betterave sont liés et la question de l'agriculture biologique comme solution face aux "tueurs d'abeilles" apparait dans les deux situations. Si l'association de la vidéo 2 offre un rapport équilibré entre les termes "sucre" et "betterave", la visualisation de la vidéo 3 fait apparaitre une forme plaçant le "sucre" comme pièce centrale des discussions.</p>
+
+        <h3>Limites</h3>
+        <p>
+          Au cours de notre étude des commentaires des différentes vidéos, nous avons réalisé que la pseudonymisation de la plateforme YouTube favorisait l'apparition de commentaires "trolls" sous les vidéos. Leur suppression au cours du nettoyage a conduit à la suppression d'un nombre important de données. On obtient alors une visualisation en nuage limitée, dans la mesure où l'orientation des commentaires relève alors plus des opinions ou réactions sur la forme, plutôt que sur la question de fond soulevée par la réintroduction des néonicotinoïdes.</p>
+          <p>
+          Au-delà de ce comportement, on note une profonde absence de débat dans l'espace des commentaires YouTube. Certaines personnes soutiennent le ou la vidéaste, d'autres opèrent une action de promotion, mais les échanges portant sur la question des néonicotinoïdes restent minoritaires.
+          </p>
+
+          <h3>Conclusions</h3>
+          <p>Finalement, si l'analyse des commentaires des vidéos témoigne d'une connaissance de la controverse par les internautes, il semble important de souligner l'absence de débat et la position presque consensuelle qu'adopte cette communauté qui, au-delà des trolls, se positionne majoritairement contre ces pesticides. Les enjeux défendus sont principalement écologiques et sanitaires. Ils sont empreints d'une forte influence émotionnelle. On note peu de considération à l'égard de la condition des agriculteurs.</p>
+          <p>Une observation intéressante à souligner est l'existence d'une certaine forme de "communauté"" des trolls dans le débat. Nous avons en effet vu des utilisateurs comme "_Permem", troller sur les différentes vidéos étudiées – vidéos 2 et 3 concernant ce dernier.</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="text-center">
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licence Creative Commons"
+          style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+          Le contenu de ce chapitre est diffusé sous licence libre CC BY 4.0
+        </div>
+      </footer>
+    </body>
+
+    </html>

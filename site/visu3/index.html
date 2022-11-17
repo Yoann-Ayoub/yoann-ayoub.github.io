@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>Controverse IC05</title>
+  <meta charset="utf-8" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- Trouver pourquoi ça bug sur la navigation-->
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-2 toc">
+        <ul class="nav">
+          <li>
+            <a href="../acceuil/index.html">Page principale du site</a>
+          </li>
+          <li>
+            <a href="../intro/index.html">Introduction à la controverse</a>
+          </li>
+          <li>
+            <a href="../visu1/index.html">Visualisation : Analyse textuelle des commentaires de vidéos YouTube</a>
+          </li>
+          <li>
+            <a href="../visu2/index.html">Visualisation : Analyse des <i>tweets</i> dédiés aux néonicotinoïdes</a>
+          </li>
+          <li>
+            <a href="#" class="active" >Visualisation : Analyse des résultats du vote de l'Assemblée nationale sur le retour des néonicotinoïdes</a>
+          </li>
+          <li>
+            <a href="../synthese/index.html" >Synthèse</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 content">
+        <h1>Projet IC05</h1>
+        <h2>Visualisation : Analyse des résultats du vote de l'assemblée nationale sur le retour des néonicotinoïdes</h2>
+        <br>
+        <h3>Présentation de la démarche</h3>
+        <p>
+          Après avoir étudié les réactions et controverses à propos des néonicotinoïdes à la fois sur YouTube et Twitter, il nous a paru pertinent de confronter ces deux études à un autre point de vue, à savoir le point de vue politique. Pour cela, nous nous sommes appuyés sur le résultat du vote de l’Assemblée nationale à propos du projet de loi relatif aux conditions de mise sur le marché de certains produits phytopharmaceutiques en cas de danger sanitaire pour les betteraves sucrières (scrutin n° 2940 datant du 06/10/2020). Ce projet de loi a notamment été la conséquence de nombreux tweets à ce sujet constatés sur ce mois d’octobre 2020.</p>
+          <p>Une aspiration de la page : <a href="https://www2.assemblee-nationale.fr/scrutins/detail/(legislature)/15/(num)/2940">https://www2.assemblee-nationale.fr/scrutins/detail/(legislature)/15/(num)/2940</a> a été réalisée avec le logiciel R dans le but de visualiser graphiquement le résultat de ce vote et notamment d’analyser le résultat en fonction du parti politique des députés.</p>
+
+          <h3>Visualisation et analyse des résulats</h3>
+          <div class="box">
+            <img src="camembert.png" alt="visu1" width="80%">
+          </div>
+          <br>
+          <p>La première représentation présente une synthèse de ce vote. On constate que l’Assemblée nationale a adopté ce projet de loi pour la réintroduction des néonicotinoïdes sur le marché à la majorité, avec 59.4% de vote pour, 30% de vote contre et une abstention de 10.6%.</p>
+          <p>Un récapitulatif des votes est disponible sur le tableau suivant :</p>
+          <div class="box">
+            <img src="tableau.png" alt="tableau" width="80%">
+          </div>
+          <br>
+          <p>Ce tableau permet d'obtenir la représentation suivante :</p>
+          <div class="box">
+            <img src="visu2.png" alt="visu2" width="90%">
+          </div>
+
+          <p>Celle-ci représente la proportion de votes pour chaque parti politique. Ici, le constat est net, ce sont clairement les partis La République en Marche (LREM) et Les républicains (LR) qui font la décision. En effet, à eux deux, ils représentent respectivement 243 et 97 députés soit un total de 64.6% des votants et contribuent au total à 77.3% des votes "pour".</p>
+          <p>Cependant, d’autres partis comme Ecologie Démocratie Solidarité (EDS), la Gauche Démocrate et Républicaine (GDR), La France Insoumise (LFI) et le groupe des Socialistes et Apparentés (SOC) sont à la quasi-unanimité contre cette réintroduction des néonicotinoïdes. En effet, 97.4% des votes de ces 4 partis sont contre les néonicotinoïdes. Par exemple, les 17 députés du parti LFI présidé par Jean Luc Mélenchon ont tous voté en défaveur des néonicotinoïdes. Il est important de remarquer que les quatre partis cités précédemment sont tous des partis orientés à gauche.  On constate alors une controverse au sein de l’Assemblée nationale opposant majoritairement la gauche et les autres partis politiques.</p>
+
+          <p>Celle-ci représente la proportion de votes pour chaque parti politique. Ici, le constat est net, ce sont clairement les partis La République en Marche (LREM) et Les républicains (LR) qui font la décision. En effet, à eux deux, ils représentent respectivement 243 et 97 députés soit un total de 64.6% des votants et contribuent au total à 77.3% des votes "pour".</p>
+          <p>Cependant, d’autres partis comme Ecologie Démocratie Solidarité (EDS), la Gauche Démocrate et Républicaine (GDR), La France Insoumise (LFI) et le groupe des Socialistes et Apparentés (SOC) sont à la quasi-unanimité contre cette réintroduction des néonicotinoïdes. En effet, 97.4% des votes de ces 4 partis sont contre les néonicotinoïdes. Par exemple, les 17 députés du parti LFI présidé par Jean Luc Mélenchon ont tous voté en défaveur des néonicotinoïdes, ce qui confirme l'engouement et la fidélité qu'a l'air de susciter Jean-Luc Mélenchon dans son allocution à l'Assemblée, étudiée précédemment. Il est important de remarquer que les quatre partis cités précédemment sont tous des partis orientés à gauche.  On constate alors une controverse au sein de l’Assemblée nationale opposant majoritairement la gauche et les autres partis politiques.</p>
+
+          <h3>Limites</h3>
+          <p> Nous venons d'étudier la position des partis en nous basant sur une unique loi. Nous avons ainsi tendance à évaluer positivement et négativement leur position générale sur la question des pesticides. Pourtant, cette question de réintroduction des néonicotinoïdes relève d'une dichotomie économie/écologie pour laquelle les débats sont très controversés.</p>
+          <p>Comme dit précédemment, les députés de LREM ont une grosse influence sur le résultat du vote. En revanche, on constate tout de même au sein de ce parti une controverse lors de ce vote. En effet, 72% des députés LREM sont pour la réintroduction des néonicotinoïdes alors que 28% sont contre ou s’abstiennent. A titre de comparaison sur un projet de loi économique (scrutin n° 3186 portant sur l’ensemble du projet de loi de finances pour 2021, séance du 17/11/2020), le parti LREM a eu ici un avis beaucoup plus tranché sur le sujet puisque 265 députés ont voté « Pour », aucun n’a voté « Contre » et seul un électeur s’est abstenu, ce qui correspont à une proportion de 99.6% des députés LREM étant du même avis.
+          En somme, un sujet écologique fait face à beaucoup plus de controverses pour le parti LREM contrairement à un sujet centré exclusivement sur l’économie. Cette hypothèse reste tout de même à confirmer sur d’autres scrutins.</p>
+
+          <h3>Conclusions</h3>
+          <p>Ainsi, nous pouvons retenir de ces visualisations l'existence d'une opposition gauche/droite sur la question de la réintroduction des néonicotinoïdes, mais également un phénomène d'écart entre les opinions citoyennes obtenues des visualisations 1 et 2, à tendance "contre", et le positionnement politique à majorité "pour". Cependant, on retient aussi que le sujet est controversé au sein du domaine politique et des partis eux-mêmes.</p>
+          <p>Pour poursuivre cette étude et la confronter à l’analyse sur Twitter, il aurait pu être intéressant de lier position des députés et d'éventuelles réactions de ces derniers sur Twitter concernant les néonicotinoïdes. Cela aurait par exemple permis de voir s'il existait, ou non, une homogénéité de l'avis des députés entre leur communication publique et leur position au sein de l'assemblée.</p>
+
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="text-center">
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licence Creative Commons"
+          style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+          Le contenu de ce chapitre est diffusé sous licence libre CC BY 4.0
+        </div>
+      </footer>
+    </body>
+
+    </html>
